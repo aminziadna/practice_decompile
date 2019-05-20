@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:theme="?toolbarStyle" android:id="@id/toolbar" android:background="@color/white_alternative" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+        <RelativeLayout android:id="@id/block_cant_find_buyer" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileBlockStyle">
+            <TextView android:id="@id/text_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_reason_didnt_wait_buyer" android:layout_centerVertical="true" style="@style/ProfileTextStyle" />
+            <ImageView android:id="@id/ic_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/block_other_car_parked" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileBlockStyle">
+            <TextView android:id="@id/text_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_reason_other_car_parked" android:layout_centerVertical="true" style="@style/ProfileTextStyle" />
+            <ImageView android:id="@id/ic_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/block_other" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileBlockStyle">
+            <TextView android:id="@id/text_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other" android:layout_centerVertical="true" style="@style/ProfileTextStyle" />
+            <ImageView android:id="@id/ic_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <include layout="@layout/view_progress_overlay" />
+</FrameLayout>

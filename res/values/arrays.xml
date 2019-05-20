@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="acq_scan_types" />
+    <style name="price_descriptions" />
+    <style name="price_descriptions_reduced" />
+    <style name="price_values" />
+    <style name="price_values_reduced" />
+</resources>

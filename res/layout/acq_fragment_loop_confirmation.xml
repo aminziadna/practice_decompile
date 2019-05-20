@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?acqContentViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/acq_attaching_card_loop_title" style="?acqPayDescriptionStyle" />
+    <ru.tinkoff.acquiring.sdk.views.FixCompatEditText android:gravity="left" android:id="@id/et_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/acq_attaching_card_loop_amount_hint" android:digits="0123456789.," android:inputType="numberDecimal" android:imeOptions="actionDone" style="?acqEditTextStyle" />
+    <Button android:id="@id/btn_check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqViewDivider" android:text="@string/acq_check" style="?acqButtonStyle" />
+    <Space android:id="@id/space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_secure_icons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqViewDivider" android:scaleType="centerInside" style="?acqPaySecureIconStyle" />
+</LinearLayout>

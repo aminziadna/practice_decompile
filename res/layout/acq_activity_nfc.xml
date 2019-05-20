@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/acq_view_root" android:background="@color/acq_colorNfcBackground" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/AcquiringNfcDescriptionTextStyle">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/acq_nfc" />
+        <TextView android:textColor="@color/acq_colorNfcTint" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/acq_nfc_description" />
+    </LinearLayout>
+    <Button android:textColor="@drawable/acq_nfc_tint_color_pressable" android:id="@id/acq_btn_close" android:background="@drawable/acq_button_bg_nfc_close" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/acq_btn_close" />
+</LinearLayout>

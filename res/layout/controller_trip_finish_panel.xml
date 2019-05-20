@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background_view" android:background="@color/immersive_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/container_panel" android:background="@android:color/white" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/dark_gray_text" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="12.0dip" android:text="@string/trip_finish_question" />
+        <TextView android:id="@id/text_cancel_booking" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trip_cancel_booking" android:drawableLeft="@drawable/ic_error" style="@style/BottomPanelText" />
+        <TextView android:id="@id/text_finish_trip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trip_successful_parking" android:drawableLeft="@drawable/ic_check_green" style="@style/BottomPanelText" />
+    </LinearLayout>
+</FrameLayout>

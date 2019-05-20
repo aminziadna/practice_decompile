@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_container_layout" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?acqContentViewStyle">
+            <TextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?acqPayTitleStyle" />
+            <TextView android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?acqPayDescriptionStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_price_layout" style="?acqPriceLayoutStyle">
+                <TextView android:id="@id/tv_amount_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/acq_money_label" android:layout_weight="1.0" style="?acqTextViewStyle" />
+                <TextView android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?acqTitleTextViewStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_src_card_chooser" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqContentBlockDivider">
+                <TextView android:id="@id/tv_src_card_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?acqTitleTextViewStyle" />
+                <TextView android:id="@id/tv_src_card_choose_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/acq_change_card_label" style="?acqAccentTextStyle" />
+            </LinearLayout>
+            <ru.tinkoff.acquiring.sdk.views.EditCardView android:id="@id/ecv_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqContentBlockDivider" style="?acqCardViewTextStyle" />
+            <ru.tinkoff.acquiring.sdk.views.FixCompatEditText android:id="@id/et_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqViewDivider" android:inputType="textEmailAddress" style="?acqPayEmailStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/pay_buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqViewDivider">
+                <Button android:id="@id/btn_pay" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="4.0dip" style="?acqButtonStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/fl_android_pay_placeholder" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                    <include layout="@layout/gpay_button_short_no_shadow" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:id="@id/space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_secure_icons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqViewDivider" android:scaleType="centerInside" style="?acqPaySecureIconStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.tinkoff.acquiring.sdk.views.BankKeyboard android:id="@id/acq_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

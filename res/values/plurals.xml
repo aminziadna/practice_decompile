@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hours_count">
+        <item quantity="other">%1$d ч.</item>
+    </plurals>
+    <plurals name="minutes_count">
+        <item quantity="other">%1$d мин.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="?toolbarStyle" android:id="@id/toolbar" android:background="@color/white_alternative" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+    <ScrollView android:id="@id/form_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal">
+                <com.rengwuxian.materialedittext.MaterialEditText android:id="@id/edit_text_fio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/template_fio" android:lines="1" android:singleLine="true" android:inputType="textPersonName" android:nextFocusForward="@id/edit_text_account" app:met_floatingLabelText="@string/template_fio" style="@style/LightTextField" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/btn_info_fio" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline" android:tint="@color/blue_text" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal">
+                <com.rengwuxian.materialedittext.MaterialEditText android:id="@id/edit_text_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/template_account" android:lines="1" android:singleLine="true" android:inputType="number" android:nextFocusForward="@id/edit_text_bik" app:met_floatingLabelText="@string/template_account" style="@style/LightTextField" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/btn_info_account" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline" android:tint="@color/blue_text" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal">
+                <com.rengwuxian.materialedittext.MaterialEditText android:id="@id/edit_text_bik" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/template_bik" android:lines="1" android:singleLine="true" android:inputType="number" app:met_floatingLabelText="@string/template_bik" style="@style/LightTextField" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/btn_info_bik" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline" android:tint="@color/blue_text" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal">
+                <com.rengwuxian.materialedittext.MaterialEditText android:id="@id/edit_text_template_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/template_name" android:lines="1" android:singleLine="true" android:inputType="text" app:met_floatingLabelText="@string/template_name" style="@style/LightTextField" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/btn_info_name" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline" android:tint="@color/blue_text" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_next" android:background="@drawable/btn_big_green" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="25.0dip" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="30.0dip" android:text="@string/next" android:includeFontPadding="false" android:layout_below="@id/form_container" android:layout_centerHorizontal="true" />
+    <include layout="@layout/view_progress_overlay" />
+</RelativeLayout>

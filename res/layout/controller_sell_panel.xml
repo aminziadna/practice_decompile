@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/btn_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/ic_close_24dp" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:backgroundTint="@android:color/white" app:elevation="4.0dip" app:fabCustomSize="40.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/container_actions" android:background="@drawable/bg_gradient_top_round_corners" android:paddingLeft="18.0dip" android:paddingTop="49.0dip" android:paddingRight="18.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/block_address" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SellPanelBlockStyle">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_address" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/btn_address_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_24dp" style="@style/SellPanelButtonStyle" />
+            <ProgressBar android:theme="@style/AppTheme.WhiteAccent" android:id="@id/progress_address" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/block_time" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SellPanelBlockStyle">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_time_title" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white_50" android:gravity="center" android:id="@id/text_time_subtitle" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@id/btn_time_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_24dp" style="@style/SellPanelButtonStyle" />
+        </RelativeLayout>
+        <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/block_price" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SellPanelBlockStyle">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_price_title" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white_50" android:gravity="center" android:id="@id/text_price_subtitle" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/sell_recommended_price" />
+            </LinearLayout>
+            <ImageView android:id="@id/btn_price_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_24dp" style="@style/SellPanelButtonStyle" />
+        </RelativeLayout>
+        <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/block_auto" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SellPanelBlockStyle">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_auto_title" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white_50" android:gravity="center" android:id="@id/text_auto_subtitle" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/sell_my_auto" android:layout_below="@id/text_auto_title" />
+            <ImageView android:id="@id/btn_auto_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit_24dp" style="@style/SellPanelButtonStyle" />
+        </RelativeLayout>
+        <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_publish" android:background="@drawable/btn_big_green" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/publish" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-50.0dip" android:layout_above="@id/container_actions" android:layout_centerHorizontal="true" layout="@layout/view_avatar_triangle" />
+    <include layout="@layout/view_progress_overlay" />
+</RelativeLayout>

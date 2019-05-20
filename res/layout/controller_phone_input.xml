@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/AppTheme.WhiteAccent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:text="@string/registration_title" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/registration_subtitle" />
+        <com.rengwuxian.materialedittext.MaterialEditText android:id="@id/phone_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="42.0dip" android:layout_marginRight="@dimen/margin_normal" android:hint="@string/phone_field_hint" android:lines="1" android:singleLine="true" android:inputType="none" app:met_floatingLabelPadding="15.0dip" app:met_floatingLabelText="@string/phone_field" style="@style/SignupTextField" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:id="@id/btn_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:layout_alignParentRight="true" style="@style/TopRightButton" />
+    <ru.gg.scooby.ui.custom.PinKeyboard android:id="@id/pin_keyboard" android:layout_width="fill_parent" android:layout_height="224.0dip" android:layout_marginBottom="@dimen/margin_small" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_normal" android:text="@string/terms_of_service_notice" android:layout_above="@id/pin_keyboard" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_dev_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_normal" android:text="@string/profile_dev_settings" android:layout_above="@id/text_terms" android:layout_centerHorizontal="true" style="?android:borderlessButtonStyle" />
+    <include layout="@layout/view_progress_overlay" />
+</RelativeLayout>

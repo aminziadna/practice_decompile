@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_profile_header" />
+    <include android:id="@id/btn_profile_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="87.0dip" android:layout_centerHorizontal="true" layout="@layout/view_avatar_profile" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:id="@id/label_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="@string/finances_current_balance" android:layout_below="@id/bg_profile_header" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/dark_gray_text" android:id="@id/text_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/label_balance" android:layout_centerHorizontal="true" android:fontFamily="@string/font_family_medium" />
+    <RelativeLayout android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_below="@id/text_balance">
+        <TextView android:textSize="25.0sp" android:textColor="@color/dark_gray_text" android:gravity="center" android:id="@id/text_no_templates" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/finances_no_templates" android:fontFamily="@string/font_family_medium" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:gravity="center" android:id="@id/text_no_templates_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="50.0dip" android:text="@string/finances_no_templates_notice" android:layout_below="@id/text_no_templates" android:fontFamily="@string/font_family_medium" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_above="@id/btn_add" android:layout_below="@id/text_balance">
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list_templates" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_add" android:background="@drawable/btn_big_blue" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="30.0dip" android:text="@string/finances_transfer_to_bank_account" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <include layout="@layout/view_progress_overlay" />
+</RelativeLayout>

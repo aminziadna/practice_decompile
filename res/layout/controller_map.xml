@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/map_controller_root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/map_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            app:mapbox_cameraZoom="11.0"
+            app:mapbox_renderTextureMode="false" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15.0dip"
+        android:overScrollMode="never" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/btn_my_location"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_above="@id/bottom_container"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="@dimen/my_location_button_margin_bottom"
+        android:scaleType="center"
+        android:src="@drawable/ic_location_arrow"
+        app:backgroundTint="@android:color/white"
+        app:elevation="@dimen/fab_elevation"
+        app:fabCustomSize="40.0dip" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/btn_search"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="25.0dip"
+        android:scaleType="center"
+        android:src="@drawable/ic_search_blue_18dp"
+        app:backgroundTint="@android:color/white"
+        app:elevation="@dimen/fab_elevation"
+        app:fabCustomSize="40.0dip" />
+
+    <include
+        android:id="@id/btn_profile"
+        layout="@layout/view_avatar_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21.0dip" />
+
+    <FrameLayout
+        android:id="@id/map_child_router"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <include layout="@layout/view_progress_overlay" />
+</RelativeLayout>

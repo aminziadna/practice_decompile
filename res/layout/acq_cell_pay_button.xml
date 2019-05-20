@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pay_buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?acqViewDivider"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_pay" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="4.0dip" style="?acqButtonStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fl_android_pay_placeholder" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <include layout="@layout/gpay_button_short_no_shadow" />
+    </LinearLayout>
+</LinearLayout>

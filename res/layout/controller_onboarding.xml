@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_next" android:background="@drawable/btn_big_blue" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="16.0dip" android:text="@string/next" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.viewpagerindicator.IconPageIndicator android:id="@id/pager_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_above="@id/btn_next" android:layout_centerHorizontal="true" />
+</RelativeLayout>

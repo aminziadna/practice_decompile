@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/acq_gl_keys" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="240.0dip" android:rowCount="4" android:columnCount="3" style="?acqKeyboardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="1" app:keyText="1" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="2" app:keyText="2" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="3" app:keyText="3" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="4" app:keyText="4" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="5" app:keyText="5" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="6" app:keyText="6" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="7" app:keyText="7" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="8" app:keyText="8" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" app:keyCode="9" app:keyText="9" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_column="1" app:keyCode="0" app:keyText="0" style="?acqKeyboardStyle" />
+    <ru.tinkoff.acquiring.sdk.views.KeyView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_column="2" app:keyCode="10" app:keyImage="@drawable/acq_back_arrow" style="?acqKeyboardStyle" />
+</GridLayout>
